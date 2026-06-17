@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-} */
-
 html,
 body {
     height: 100%;
@@ -25,8 +19,15 @@ body {
 }
 
 main {
-    flex: 1; /* Takes up remaining space */
+    flex: 1;
     min-width: 80%;
+}
+
+.text-center {
+    color: red;
+    text-align: center;
+    border: white 3px solid;
+    align-items: center;
 }
 
 header {
@@ -57,6 +58,23 @@ main {
     padding: 20px;
     background: white;
     border-radius: 8px;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.course-info h2 {
+  margin: 0;
+}
+
+.dot {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .hero-image {
@@ -105,6 +123,22 @@ button {
 
 button:hover {
     background-color: #008844;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
 }
 
 footer {
